@@ -5,7 +5,7 @@ DROP DATABASE IF EXISTS SpotifyClone;
   CREATE TABLE SpotifyClone.signatures(
       signature_id INT PRIMARY KEY AUTO_INCREMENT,
       signature_name VARCHAR(200) NOT NULL,
-      signature_price INT NOT NULL
+      signature_price FLOAT NOT NULL
   ) engine = InnoDB;
 
   CREATE TABLE SpotifyClone.users(
@@ -59,7 +59,7 @@ DROP DATABASE IF EXISTS SpotifyClone;
 
 INSERT INTO SpotifyClone.signatures (signature_name, signature_price)
   VALUES
-    ('gratuito', 0),
+    ('gratuito', 0.00),
     ('familiar', 7.99),
     ('universitário', 5.99),
     ('pessoal', 6.99);
