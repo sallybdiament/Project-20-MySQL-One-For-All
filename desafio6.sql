@@ -3,6 +3,14 @@ FROM SpotifyClone.signatures
 INNER JOIN SpotifyClone.users ON SpotifyClone.users.signature_id = SpotifyClone.signatures.signature_id
 GROUP BY id;
 
+ou 
+SELECT COUNT(users.signature_id)*signatures.signature_price AS faturamento
+FROM SpotifyClone.signatures
+INNER JOIN SpotifyClone.users ON SpotifyClone.users.signature_id = SpotifyClone.signatures.signature_id
+GROUP BY SpotifyClone.signatures.signature_id
+;
+
+
 SELECT ROUND(MIN(signatures.signature_price), 2) AS faturamento_minimo, ROUND(MAX(signatures.signature_price), 2) AS faturamento_maximo,
 SUM((COUNT(users.signature_id))*signatures.signature_price) AS faturamento
 FROM SpotifyClone.signatures 
