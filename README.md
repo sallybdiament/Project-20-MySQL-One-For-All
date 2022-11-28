@@ -2,7 +2,7 @@
 
 Normalizar uma tabela na terceira forma normal e acesse as informações desta tabela através de queries utilizando SQL, com o intuito de encontrar as informações solicitadas.
 
-Projeto 23 da [Trybe](https://wwww.betrybe.com), módulo de Back-End.
+Projeto 20 da [Trybe](https://wwww.betrybe.com), módulo de Back-End.
 
 ## O Projeto
 
